@@ -22,70 +22,6 @@ console.log( "==========================");
 console.log( "=== configuration 1.11 ===");
 console.log( "==========================");
 
-/*
-
-// When a function is created, a keyword called this is created (behind the scenes), 
-// which links to the object in which the function operates.
-
-function Test2() {
-	
-	var self = this; // this refers to the global object, because it is the global scope
-	// that owns this function
-
-	//this is used as private
-    this.name = "Jabba the Hut"; // this will be bound to the global object.
-    console.log("Test2() Constructor: " + this.name);
-
-    return {
-    	//if we want to use this as public, we have to use self
-
-        growls : function(phrase) {
-        	// this refers to the object that's bound to this function
-            console.log(self.name + " yells out " + phrase);
-            console.log(this.name + " yells out " + phrase); //ryu
-            //refers to 'this' of the invoking object pointer on the stack
-        },
-
-        //
-        growls2 : (phrase) => {
-        	console.log(this.name + " yells out " + phrase); //jabba 
-        	//refers to 'this' of the lexical scope, which is our private 'this' that's on the heap
-
-        }
-    };
-}
-
-var t2 = Test2(); //own attribute
-t2.name = "Ryu..";
-t2.growls("hadoken");
-t2.growls2("shoooo ryu ken!");
-
-console.log('global.name: ' + global.name);
-
-
-*/
-
-
-/*
-const car = {
-
-	type: "bmw",
-	color: "white"
-};
-
-function changeCar(carObj) {
-
-	if('type' in carObj) {
-		carObj.type = "honda";
-	}
-}
-
-changeCar(car);
-
-console.log(car.type);
-console.log(car.color);
-*/
-
 
 mongoose.connect(config.database); // connect to database
 var db = mongoose.connection;
@@ -100,6 +36,9 @@ db.once('open', function (callback) {
 
 app.set('superSecret', config.secret); // secret variable
 
+
+//when running on live server, uncomment below:
+
 /*
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -107,7 +46,6 @@ app.use(function(req, res, next) {
   next();
 });
 */
-
 
 
 app.use(express.static('public'));
