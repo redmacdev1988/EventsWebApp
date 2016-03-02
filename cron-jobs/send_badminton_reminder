@@ -1,0 +1,6 @@
+#!/bin/bash
+# My first script
+
+
+echo "`date `"
+curl http://www.rickytsao.com:8881/send_reminder -GET
