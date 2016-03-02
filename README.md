@@ -1,5 +1,7 @@
 # EventsWebApp
+
 Web App for organizing events 
+http://www.rickytsao.com:8881/welcome.html
 
 When running on a live server, make sure you uncomment the lines for Access-Control in server.js
 
