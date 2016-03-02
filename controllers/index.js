@@ -15,10 +15,6 @@ require('./POST_init')(router);  			//when a page is loaded, we find the next ev
 require('./POST_registerAttendee')(router); //put potential attendee into the db
 require('./GET_register')(router);  		// when potential attendee clicks on email link to register
 
-//require('./GET_email_to_admin')(router); 
 require('./GET_send_reminder')(router); 
-
-//require('./GET_ie_test_send')(router);
-//require('./GET_ie_test_json')(router); 	
 
 module.exports = router;

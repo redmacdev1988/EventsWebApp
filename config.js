@@ -15,9 +15,6 @@ module.exports = {
     'ADMIN_EMAIL'           : "Ricky_Tsao@epam.com",
     'ADMIN_PHONE'           : "18688752061",
     'ROOT_PATH'             : "/Users/rickytsao/Desktop/EPAM_events_LIVE/",
-    // /home/projects/
 
-    "EVENT_DEADLINE_HOUR" 			: 16,
-    "EVENT_DEADLINE_MINUTE" 		: 5,
     "EVENT_DEADLINE_WITHIN_HOURS" 	: 24 //deadline of the event in "hours from the event"
 };
