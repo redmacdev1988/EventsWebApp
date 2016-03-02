@@ -12,6 +12,6 @@ How to set it up on your machine: https://github.com/redmacdev1988/EventsWebApp/
 
 <ul>
 <li>This project is to be run on a Mac OS X, or Ubuntu.</li>
-<li>The backend js files have been used with <a href='https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb'>airbnb eslint</a>, and thus, uses features of ES6. 
+<li>The backend js files have been used with <a target='_blank' href='https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb'>airbnb eslint</a>, and thus, uses features of ES6. 
 Hence, please update to latest version of Node.</li>
 </ul>
