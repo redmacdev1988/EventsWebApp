@@ -1,0 +1,78 @@
+
+
+
+@media (max-width: 767px) {
+
+    html {
+        float:left;
+        background-color: black;
+        
+    }
+
+    body {
+        margin: 0px;
+        padding: 0;
+        background: #f9f9f9;
+        border-top: 6px solid black;   
+    }
+
+    #top {
+        float: left;
+        width: 100%;
+    }
+    #registrations-container {
+        width: 80%;
+        float: right;
+        padding: 25px;
+    }
+
+    #header {
+        position: absolute;
+        left: -40px;
+        top: -26px;
+    }
+
+    button#register-attendee {
+
+        width: 100%;
+        margin-top: 30px;
+        padding: 30px;
+        font-size: 25pt;
+    }
+
+    input[type=text]{
+      border-radius:12 px;
+    }
+
+    #attendee-email {
+        height: 88px;
+        font-size: 32pt;
+    }
+
+    #logo img {
+        position: absolute;
+        left: 5px;
+        top: -10px;
+
+    }
+
+    #slogan {
+        float: left;
+        width: 100%;
+
+    }
+    #event-info {
+        line-height: 3.8em;
+        float: left;
+        width: 100%;
+    }
+
+    #event-info ul li {
+        font-size: 48px;
+    }
+
+    #event-image {
+        float: left;
+        width: 100%;
+    }
+}

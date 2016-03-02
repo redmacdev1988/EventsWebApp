@@ -1,0 +1,29 @@
+{
+  "name": "book_api",
+  "version": "0.0.0",
+  "description": "sample project i'm doing",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.13.0",
+    "gulp": "^3.9.0",
+    "jsonwebtoken": "^5.0.2",
+    "mongoose": "^4.0.6",
+    "morgan": "^1.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "book",
+    "api",
+    "sample",
+    "project"
+  ],
+  "author": "ricky",
+  "license": "ISC"
+}

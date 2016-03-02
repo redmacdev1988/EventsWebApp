@@ -1,0 +1,139 @@
+/* Landscape tablets and medium desktops */
+/*@media (min-width: 992px) and (max-width: 1199px) {*/
+
+
+    html {
+        float:left;
+        background-color: black;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0;
+        background: #f9f9f9;
+        border-top: 6px solid black;
+    }
+
+
+    #registrations-container {
+        margin-top:     50px;
+        margin-bottom:  50px;
+    }
+
+
+    /* Tab Navigation */
+    .nav-tabs {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .nav-tabs > li > a {
+        background: #DADADA;
+        border-radius: 0;
+
+        /*box-shadow: inset 0 -8px 7px -9px rgba(0,0,0,.4),-2px -2px 5px -2px rgba(0,0,0,.4);*/
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover {
+        background: #F5F5F5;
+        /*box-shadow: inset 0 0 0 0 rgba(0,0,0,.4),-2px -3px 5px -2px rgba(0,0,0,.4);*/
+    }
+
+    /* Tab Content */
+    .tab-pane {
+        background: #F5F5F5;
+
+        border-left:    1px solid #ddd;
+        border-bottom:  1px solid #ddd;
+        border-right:   1px solid #ddd;
+
+        /*box-shadow: 0 0 4px rgba(0,0,0,.4);*/
+        border-radius: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+
+    #directions-in-text {
+        text-align: left;
+    }
+
+
+    button#register-attendee {
+        display: block;
+    }
+
+    #note p{
+
+        background-color: #ffaf78;
+        width: 80%;
+        display: block;
+        padding: 30px;
+        margin-left:  auto;
+        margin-right: auto;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    #header {
+        margin: 12px 0 0 12px;
+    }
+
+    #logo img{
+        position: absolute;
+        left: -60px;
+        top: -25px;
+    }
+
+
+    #title { 
+
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2.2pt;
+        word-spacing: 15pt;
+        line-height: 1.0;
+    }
+
+
+    #event-info {
+        width: 100%;
+        padding: 0;
+        line-height: 2.8em;
+        margin: 40px 0 0 0;
+    }
+
+    #event-info ul { font-family:Georgia, Times, serif; font-size:18px; color:black;  }
+    #event-info ul li { }
+
+    #event-info ul li p { 
+        padding:8px; font-style:normal; font-family:Arial; font-size:13px; color:black; 
+    }
+
+    #event-info ul li p em { display:block; }
+
+
+    #footer {
+        margin-top: 10px;
+    }
+
+    #footer #footer-image {
+        width: 100%;
+    }
+
+    #footer-end {
+        background-color: black;
+        color: white;
+        padding: 30px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+
+/*}*/
+
+

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title> Badminton Events Test v1.0</title>
+
+   <!-- bootstrap -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+   <!-- jquery -->
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+   <!-- bootstrap js-->
+   <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+            crossorigin="anonymous"></script>
+
+   
+
+   <!-- css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+   <link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+   <link rel="stylesheet" type="text/css" href="css/large.css">
+
+
+
+   <script>
+   if (typeof jQuery != 'undefined') {
+      console.log("jQuery library is loaded!");
+   }else{
+      console.log("jQuery library is not found!");
+   }
+   </script>
+
+   <!-- button responder -->
+   <script src="client.js"></script>
+
+ </head>
+
+
+
+<body>
+
+
+<div class="modal fade" id="RegistrationClosedModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+
+        <!-- <span aria-hidden="true">&times;</span></button> -->
+
+
+        <h4 class="modal-title" id="exampleModalLabel">Sorry, registration closed</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Please check back for the next event!</label>
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+
+      <!--
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+        -->
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal FOR PROGRESS BAR -->
+
+<div class="modal fade" id="register-user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+      <!--  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+
+        <h4 class="modal-title" id="myModalLabel">Please Wait while we enter your information...</h4>
+      </div>
+
+      <div class="modal-body center-block">
+        Thank you for using our service
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div id="top">
+
+  <div id="header">
+    <span id="logo"><img src="images/logo.png"/></span>
+  </div>
+
+  <div id="registrations-container" class="container">
+    <div class="row">
+      <div class="col-md-2">        
+      </div>
+
+      <div class="col-md-10">
+        <div id="note"></div>
+      </div>
+    </div> <!-- row -->
+    
+
+    <div class="row">
+
+      <div class="col-sm-2">
+      </div>
+
+      <div class="col-sm-6">
+       
+        <div class="input-group input-group-lg">
+        <input  type="text" id="attendee-email" class="form-control input-lg" 
+              placeholder="First_Last" 
+              aria-describedby="basic-email">
+
+        <span class="input-group-addon" id="basic-email">@epam.com</span>       
+        </div>
+      </div>
+
+        <div class="col-sm-4">
+          <button type="button" id="register-attendee" class="btn btn-warning btn-lg" >
+              Send me Registration Email
+          </button>
+        </div>
+
+      </div> <!-- row -->
+
+
+      <div class="row">
+
+        <div class="col-md-4">
+        </div>
+
+        <div class="col-md-8">
+            
+        </div>
+
+    </div> <!-- row -->
+
+  </div> <!-- registration container -->
+
+</div> <!-- top -->
+ 
+
+<div class="container">
+
+  
+  <div class="row">
+
+    <div class="col-md-2">
+    </div>
+
+    <div class="col-md-10">
+
+      <div class="col-md-4">
+       <ul id="slogan">
+       <li id="title">Fun</li>
+       <li id="title">Friends</li>
+       <li id="title">Fit</li>
+       </ul>
+
+        <div id="event-info">
+           <ul>
+              <li id="event-date"></li>
+              <li id="event-description"></li>
+              <li>0755-86093666/0755-86093688 Yvonne</li>
+           </ul>
+        </div>
+      </div>
+
+      <div id="event-image" class="col-md-6">
+        <img src="images/badminton-background.png" />
+      </div>
+
+    </div> <!-- col 10 -->
+
+  </div> <!-- row -->
+
+
+  </div> <!-- container -->
+
+  <div class="row" id="footer">
+    <div class="col-md-12">
+      <img id="footer-image" src="images/footer.gif" />
+    </div>
+  </div>
+
+  <div id="footer-end" class="row">
+    <div class="col-md-4">
+      copyright EPAM 2016. All Rights Reserved
+    </div>
+
+     <div class="col-md-4">
+      0755-86093666/0755-86093688 Yvonne
+    </div>
+
+    <div class="col-md-4">
+    
+    <ul>
+      <li><a href="welcome.html">home</a></li>
+      <li><a href="directions.html">directions</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+</body>
+</html>

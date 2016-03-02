@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title> Badminton Events Test v1.0</title>
+
+   <!-- bootstrap -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+   <!-- jquery -->
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+   <!-- css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+   <script>
+   if (typeof jQuery != 'undefined') {
+      console.log("jQuery library is loaded!");
+   }else{
+      console.log("jQuery library is not found!");
+   }
+   </script>
+
+   <!-- button responder -->
+   <script src="client.js"></script>
+
+ </head>
+<body>
+
+
+  <div class="container">
+
+      <h1> Get results for this upcoming Badminton Event! </h1>
+
+
+      <div class="row">
+
+         <div class="col-md-4">
+            <div class="panel panel-success">
+
+               <div class="panel-heading">
+                  <h3 class="panel-title">Date</h3>
+               </div>
+
+               <div id="event-date" class="panel-content"></div>
+
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="panel panel-primary">
+
+               <div class="panel-heading">
+                  <h3 class="panel-title">Description</h3>
+               </div>
+
+               <div id="event-description" class="panel-content"></div>
+
+            </div>
+        </div> <!-- col -->
+
+         <div class="col-md-4">
+            <div class="panel panel-success">
+               <div class="panel-heading">
+                  <h3 class="panel-title">Contact</h3>
+               </div>
+
+               <div class="panel-content">
+                   0755-86093666/0755-86093688 Yvonne
+               </div>
+            </div>
+        </div> <!-- col 4 -->
+
+      </div> <!-- row -->
+
+
+	  <button 	type="button" 
+  			id="send-results"
+  			class="btn btn-default" 
+  			aria-haspopup="false" 
+  			aria-expanded="false">
+   			Send Results
+	  </button>
+
+  </div> <!-- container -->
+
+
+</body>
+</html>
